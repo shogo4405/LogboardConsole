@@ -1,5 +1,5 @@
 # LogboardConsole
 iOS, macOS, tvOS, watchOS Debugging Tool, Logging console via Network.
 
-# Clinet library
+# Client Library
 * https://github.com/shogo4405/Logboard
