@@ -1,0 +1,13 @@
+*.xcodeproj/xcuserdata/*
+*.xcworkspace/xcuserdata/*
+docs
+build
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+.DS_Store
+Pods
+
+Cartfile.resolved
+Carthage/*

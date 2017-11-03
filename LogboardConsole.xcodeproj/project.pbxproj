@@ -11,7 +11,27 @@
 		297E668A1FACAEE4003C8228 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297E66891FACAEE4003C8228 /* ViewController.swift */; };
 		297E668C1FACAEE4003C8228 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 297E668B1FACAEE4003C8228 /* Assets.xcassets */; };
 		297E668F1FACAEE4003C8228 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 297E668D1FACAEE4003C8228 /* Main.storyboard */; };
+		29F22F9C1FACB6AE0085ECF9 /* LogboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F22F981FACB6AE0085ECF9 /* LogboardService.swift */; };
+		29F22FA21FACD1670085ECF9 /* HaishinKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F22F9F1FACB7080085ECF9 /* HaishinKit.framework */; };
+		29F22FA31FACD1670085ECF9 /* HaishinKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29F22F9F1FACB7080085ECF9 /* HaishinKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		29F22FA41FACD1670085ECF9 /* Logboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F22F9E1FACB7080085ECF9 /* Logboard.framework */; };
+		29F22FA51FACD1670085ECF9 /* Logboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29F22F9E1FACB7080085ECF9 /* Logboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		29F22FA61FACD1670085ECF9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				29F22FA51FACD1670085ECF9 /* Logboard.framework in Embed Frameworks */,
+				29F22FA31FACD1670085ECF9 /* HaishinKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		297E66841FACAEE4003C8228 /* LogboardConsole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogboardConsole.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,6 +41,9 @@
 		297E668E1FACAEE4003C8228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		297E66901FACAEE4003C8228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		297E66911FACAEE4003C8228 /* LogboardConsole.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LogboardConsole.entitlements; sourceTree = "<group>"; };
+		29F22F981FACB6AE0085ECF9 /* LogboardService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogboardService.swift; sourceTree = "<group>"; };
+		29F22F9E1FACB7080085ECF9 /* Logboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Logboard.framework; path = Carthage/Build/Mac/Logboard.framework; sourceTree = "<group>"; };
+		29F22F9F1FACB7080085ECF9 /* HaishinKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HaishinKit.framework; path = Carthage/Build/Mac/HaishinKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29F22FA41FACD1670085ECF9 /* Logboard.framework in Frameworks */,
+				29F22FA21FACD1670085ECF9 /* HaishinKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +64,7 @@
 			children = (
 				297E66861FACAEE4003C8228 /* LogboardConsole */,
 				297E66851FACAEE4003C8228 /* Products */,
+				29F22F9D1FACB7080085ECF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +79,7 @@
 		297E66861FACAEE4003C8228 /* LogboardConsole */ = {
 			isa = PBXGroup;
 			children = (
+				29F22F981FACB6AE0085ECF9 /* LogboardService.swift */,
 				297E66871FACAEE4003C8228 /* AppDelegate.swift */,
 				297E66891FACAEE4003C8228 /* ViewController.swift */,
 				297E668B1FACAEE4003C8228 /* Assets.xcassets */,
@@ -61,6 +88,15 @@
 				297E66911FACAEE4003C8228 /* LogboardConsole.entitlements */,
 			);
 			path = LogboardConsole;
+			sourceTree = "<group>";
+		};
+		29F22F9D1FACB7080085ECF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29F22F9F1FACB7080085ECF9 /* HaishinKit.framework */,
+				29F22F9E1FACB7080085ECF9 /* Logboard.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,6 +109,7 @@
 				297E66801FACAEE4003C8228 /* Sources */,
 				297E66811FACAEE4003C8228 /* Frameworks */,
 				297E66821FACAEE4003C8228 /* Resources */,
+				29F22FA61FACD1670085ECF9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +173,7 @@
 			files = (
 				297E668A1FACAEE4003C8228 /* ViewController.swift in Sources */,
 				297E66881FACAEE4003C8228 /* AppDelegate.swift in Sources */,
+				29F22F9C1FACB6AE0085ECF9 /* LogboardService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +304,10 @@
 				CODE_SIGN_ENTITLEMENTS = LogboardConsole/LogboardConsole.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = LogboardConsole/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.shogo4405.LogboardConsole;
@@ -281,6 +323,10 @@
 				CODE_SIGN_ENTITLEMENTS = LogboardConsole/LogboardConsole.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = LogboardConsole/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.shogo4405.LogboardConsole;
