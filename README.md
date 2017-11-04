@@ -13,10 +13,11 @@ carthage update
 Open xcode 'LogboardConsole' and [Product] -> [Archive].
 
 ## Logging
-LogboardConsole requires Logboard module as client.  
+LogboardConsole requires [Logboard](https://github.com/shogo4405/Logboard) module as client.  
 Please install and integration your project.
 
 ### SocketAppender
+Logboard SocketAppender is a LogboardConsole client.
 ```
 let logger = Logboard.with("identifier")
 let socket = SocketAppender()
@@ -32,5 +33,3 @@ Bitcoin
 ```txt
 1CWA9muX36QKBdJiRQJGpu2HvchfEpJbWr
 ```
-
-
