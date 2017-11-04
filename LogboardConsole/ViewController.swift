@@ -1,29 +1,56 @@
 import Cocoa
+import Logboard
 
-class ViewController: NSViewController {
+final class ViewController: NSViewController {
     var service: LogboardService?
 
     @IBOutlet var textFiled: NSTextView!
+    @IBOutlet var levelPopupButton: NSPopUpButton!
+
+    private var logs:[Logboard.Data] = []
+    private var level:Logboard.Level = .trace
 
     override func viewDidLoad() {
         super.viewDidLoad()
         service = LogboardService(domain: "", type: "_log._tcp", name: "Logboard", port: 22222)
         service?.delegate = self
         service?.startRunning()
+        textFiled.textStorage?.append(NSMutableAttributedString(string: "\n"))
+
+        for level in Logboard.Level.allValues {
+            levelPopupButton.addItem(withTitle: level.description)
+        }
     }
 
     override var representedObject: Any? {
         didSet {
         }
     }
+
+    @IBAction func didChangeLevelPopupButton(_ sender:NSPopUpButton) {
+        guard let level = Logboard.Level(string: sender.selectedItem?.title ?? "") else {
+            return
+        }
+        textFiled.string = ""
+        let logs = self.logs.filter{ level.rawValue <= $0.level.rawValue }
+        for log in logs {
+            textFiled.textStorage?.append(log.attributedString)
+        }
+    }
+
+    private func render(_ data: Logboard.Data) {
+        logs.append(data)
+        guard level.rawValue <= data.level.rawValue else {
+            return
+        }
+        textFiled.textStorage?.append(data.attributedString)
+    }
 }
 
 extension ViewController: LogboardServiceDelegate {
-    func onData(_ data: Data) {
-        if let string = String(bytes: data, encoding: .utf8) {
-            DispatchQueue.main.async {
-                self.textFiled.insertText(string + "\n", replacementRange: NSMakeRange(-1, 0))
-            }
+    func onData(_ data: Logboard.Data) {
+        DispatchQueue.main.async {
+            self.render(data)
         }
     }
 }
