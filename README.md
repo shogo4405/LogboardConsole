@@ -1,6 +1,5 @@
 # LogboardConsole
-iOS, macOS, tvOS, watchOS Debugging Tool, Logging console via Network.
-
+iOS, macOS, tvOS, watchOS Debugging Tool, Logging console via Network.  
 LogboardConsole is a logging console applicaiton.
 
 ## How to build
@@ -11,11 +10,10 @@ cd LogboardConsole
 carthage update
 ```
 ### Build
-Then open xcode and [Product] -> [Archive].
+Open xcode 'LogboardConsole' and [Product] -> [Archive].
 
 ## Logging
-LogboardConsole requires Logboard module as client.
-
+LogboardConsole requires Logboard module as client.  
 Please install and integration your project.
 
 ### SocketAppender
