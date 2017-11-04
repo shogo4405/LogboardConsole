@@ -11,7 +11,7 @@ carthage update
 Then open xcode and [Product] -> [Archive].
 
 ## Logging
-LogboardConsole require Logboard module as client.
+LogboardConsole require [Logboard](https://github.com/shogo4405/Logboard/) module as client.
 Please install Logboard module.
 
 ## License
