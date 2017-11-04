@@ -2,12 +2,14 @@
 iOS, macOS, tvOS, watchOS Debugging Tool, Logging console via Network.  
 LogboardConsole is a logging console applicaiton.
 
+![Screenshot](https://github.com/shogo4405/LogboardConsole/blob/master/README/screenshot.gif)
+
 ## How to build
 ### Download
 ```
 git clone https://github.com/shogo4405/LogboardConsole.git
 cd LogboardConsole
-carthage update
+carthage update --platform macOS
 ```
 ### Build
 Open xcode 'LogboardConsole' and [Product] -> [Archive].
@@ -24,13 +26,7 @@ let socket = SocketAppender()
 socket.connect("toHost", 22222)
 logger.appender = socket
 ```
->>>>>>> origin/master
 
 ## License
 New BSD
 
-## Donation
-Bitcoin
-```txt
-1CWA9muX36QKBdJiRQJGpu2HvchfEpJbWr
-```

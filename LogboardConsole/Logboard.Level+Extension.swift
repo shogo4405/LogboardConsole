@@ -2,7 +2,7 @@ import Foundation
 import Logboard
 
 extension Logboard.Level {
-    var color:NSColor {
+    var color: NSColor {
         switch self {
         case .trace:
             return .gray
