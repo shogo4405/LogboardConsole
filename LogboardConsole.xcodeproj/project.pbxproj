@@ -13,6 +13,8 @@
 		297E668F1FACAEE4003C8228 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 297E668D1FACAEE4003C8228 /* Main.storyboard */; };
 		29C4D5771FAD537700978193 /* Logboard.Level+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C4D5761FAD537700978193 /* Logboard.Level+Extension.swift */; };
 		29C4D5791FADCACC00978193 /* Logboard.Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C4D5781FADCACB00978193 /* Logboard.Date+Extension.swift */; };
+		29C4D57C1FADD58D00978193 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 29C4D57A1FADD58C00978193 /* README.md */; };
+		29C4D57D1FADD58D00978193 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 29C4D57B1FADD58C00978193 /* Cartfile */; };
 		29F22F9C1FACB6AE0085ECF9 /* LogboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F22F981FACB6AE0085ECF9 /* LogboardService.swift */; };
 		29F22FA21FACD1670085ECF9 /* HaishinKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F22F9F1FACB7080085ECF9 /* HaishinKit.framework */; };
 		29F22FA31FACD1670085ECF9 /* HaishinKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29F22F9F1FACB7080085ECF9 /* HaishinKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -57,6 +59,8 @@
 		297E66911FACAEE4003C8228 /* LogboardConsole.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LogboardConsole.entitlements; sourceTree = "<group>"; };
 		29C4D5761FAD537700978193 /* Logboard.Level+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logboard.Level+Extension.swift"; sourceTree = "<group>"; };
 		29C4D5781FADCACB00978193 /* Logboard.Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logboard.Date+Extension.swift"; sourceTree = "<group>"; };
+		29C4D57A1FADD58C00978193 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		29C4D57B1FADD58C00978193 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		29F22F981FACB6AE0085ECF9 /* LogboardService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogboardService.swift; sourceTree = "<group>"; };
 		29F22F9E1FACB7080085ECF9 /* Logboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Logboard.framework; path = Carthage/Build/Mac/Logboard.framework; sourceTree = "<group>"; };
 		29F22F9F1FACB7080085ECF9 /* HaishinKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HaishinKit.framework; path = Carthage/Build/Mac/HaishinKit.framework; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 		297E667B1FACAEE4003C8228 = {
 			isa = PBXGroup;
 			children = (
+				29C4D57B1FADD58C00978193 /* Cartfile */,
+				29C4D57A1FADD58C00978193 /* README.md */,
 				297E66861FACAEE4003C8228 /* LogboardConsole */,
 				297E66851FACAEE4003C8228 /* Products */,
 				29F22F9D1FACB7080085ECF9 /* Frameworks */,
@@ -179,7 +185,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C4D57C1FADD58D00978193 /* README.md in Resources */,
 				297E668C1FACAEE4003C8228 /* Assets.xcassets in Resources */,
+				29C4D57D1FADD58D00978193 /* Cartfile in Resources */,
 				297E668F1FACAEE4003C8228 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
