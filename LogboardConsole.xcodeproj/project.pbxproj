@@ -98,12 +98,12 @@
 				297E66871FACAEE4003C8228 /* AppDelegate.swift */,
 				297E668B1FACAEE4003C8228 /* Assets.xcassets */,
 				297E66901FACAEE4003C8228 /* Info.plist */,
+				29C4D5781FADCACB00978193 /* Logboard.Date+Extension.swift */,
+				29C4D5761FAD537700978193 /* Logboard.Level+Extension.swift */,
 				297E66911FACAEE4003C8228 /* LogboardConsole.entitlements */,
 				29F22F981FACB6AE0085ECF9 /* LogboardService.swift */,
 				297E668D1FACAEE4003C8228 /* Main.storyboard */,
 				297E66891FACAEE4003C8228 /* ViewController.swift */,
-				29C4D5761FAD537700978193 /* Logboard.Level+Extension.swift */,
-				29C4D5781FADCACB00978193 /* Logboard.Date+Extension.swift */,
 			);
 			path = LogboardConsole;
 			sourceTree = "<group>";
